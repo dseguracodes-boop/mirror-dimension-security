@@ -1,0 +1,83 @@
+# DIMENSIÓN ESPEJO (MIRROR DIMENSION) — SOURCE-AVAILABLE LICENSE (v1.0)
+
+Copyright © 2026 Dany. All rights reserved.
+
+---
+
+### ENGLISH VERSION
+
+#### 1. Preamble & Scope
+This repository and its original source code, architecture, models, configurations, and documentation ("Dimensión Espejo" / "Mirror Dimension") are made publicly available for evaluation, technical review, academic study, and security research purposes only. Public accessibility of this source code does not constitute a grant of open-source or unrestricted public-domain rights.
+
+#### 2. Permitted Use (Non-Commercial Evaluation)
+You are granted a non-exclusive, non-transferable, royalty-free license to:
+* **Inspect & Review:** Clone, download, read, and inspect the source code for personal evaluation, code review, architectural auditing, or educational study.
+* **Non-Commercial Execution:** Run the software locally in private, non-commercial environments strictly for learning, academic demonstration, or personal cybersecurity research.
+
+#### 3. Restrictions on Use
+Without prior, explicit, written authorization from the copyright holder, you MAY NOT:
+* **Commercial Operation:** Deploy, execute, or utilize this software within commercial, corporate, governmental, or revenue-generating production environments.
+* **Hosted Services:** Operate, package, or offer the functionality of this software as a managed cloud service, SaaS (Software as a Service), PaaS, or managed security service (SecOps as a Service).
+
+#### 4. Restrictions on Distribution & Derivative Works
+Without prior, explicit, written authorization from the copyright holder, you MAY NOT:
+* **Redistribute:** Sell, rent, lease, sub-license, publish public mirrors, or distribute copies of this software in binary, source, or containerized form.
+* **Public Derivatives:** Publish, distribute, or market modified versions, forks, or derivative works based on this project.
+* **Removal of Notices:** Remove, obscure, or alter any copyright notices, license terms, or attribution headers from any copy of the code.
+
+#### 5. Third-Party Components & Upstream Open Source
+Dimensión Espejo integrates with, references, or relies upon third-party open-source tools, APIs, and libraries (including, but not limited to, Docker, osquery, OpenCanary, Atomic Red Team, Pydantic, Watchdog, Typer, and Rich).
+* **Independent Licenses:** Each third-party tool, dependency, or referenced project retains its own respective license (e.g., Apache 2.0, MIT, BSD, GPL).
+* **Scope of Claim:** Nothing in this License asserts ownership over third-party open-source components. This License applies solely to the original software architecture, orchestration logic, decision engine, models, and custom integrations authored by Dany.
+
+#### 6. Trademark & Branding Notice
+The project names "Dimensión Espejo", "Mirror Dimension", and associated logos, emblems, and slogans are proprietary designations. No license or permission is granted to use these marks in advertising, endorsements, or commercial product branding without prior written consent.
+
+#### 7. Commercial Licensing & Enterprise Inquiries
+Organizations or individuals wishing to obtain commercial exploitation rights, production deployment licenses, customized enterprise features, or integration permissions must obtain an Enterprise Commercial License.
+* **Inquiries:** Contact the copyright holder through the official repository channels.
+
+#### 8. Disclaimer & Limitation of Liability
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, SYSTEM FAILURE, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+### VERSIÓN EN ESPAÑOL
+
+#### 1. Preámbulo y Alcance
+Este repositorio y su código fuente original, arquitectura, modelos, configuraciones y documentación ("Dimensión Espejo" / "Mirror Dimension") se ponen a disposición pública exclusivamente con fines de evaluación técnica, revisión, estudio académico e investigación en ciberseguridad. El acceso público al código fuente no constituye una concesión de derechos de código abierto irrestricto ni dominio público.
+
+#### 2. Concesión de Uso Permitido (Evaluación No Comercial)
+Se otorga una licencia no exclusiva, intransferible y libre de regalías para:
+* **Inspección y Revisión:** Clonar, descargar, leer e inspeccionar el código fuente para evaluación personal, auditoría arquitectónica o estudio educativo.
+* **Ejecución No Comercial:** Ejecutar el software localmente en entornos privados y estrictamente no comerciales para aprendizaje, demostración académica o investigación personal.
+
+#### 3. Restricciones de Uso
+Queda expresamente prohibido, sin la autorización previa, expresa y por escrito del titular de los derechos de autor:
+* **Operación Comercial:** Desplegar, ejecutar o utilizar este software en entornos de producción comercial, corporativos, gubernamentales o con fines de lucro directo o indirecto.
+* **Servicios Gestionados:** Operar, empaquetar u ofrecer este software como un servicio en la nube (SaaS, PaaS o SecOps como servicio).
+
+#### 4. Restricciones de Distribución y Obras Derivadas
+Queda expresamente prohibido, sin la autorización previa, expresa y por escrito del titular de los derechos de autor:
+* **Redistribución:** Vender, alquilar, sublicenciar, publicar copias espejo públicas (*mirrors*) o redistribuir copias de este software en formato fuente, binario o contenedores.
+* **Derivados Públicos:** Publicar, distribuir o comercializar versiones modificadas, bifurcaciones (*forks*) u obras derivadas basadas en este proyecto.
+* **Remoción de Avisos:** Eliminar, alterar u ocultar cualquier aviso de copyright, términos de licencia o encabezados de atribución en cualquier copia del código.
+
+#### 5. Componentes de Terceros y Software de Código Abierto
+Dimensión Espejo interactúa con, hace referencia a, o utiliza bibliotecas y herramientas de código abierto de terceros (incluyendo, entre otros: Docker, osquery, OpenCanary, Atomic Red Team, Pydantic, Watchdog, Typer y Rich).
+* **Licencias Independientes:** Cada herramienta, dependencia o proyecto de terceros conserva su propia licencia aplicable (ej. Apache 2.0, MIT, BSD, GPL).
+* **Alcance de la Propiedad:** Esta licencia no reclama derechos sobre componentes de terceros. Aplica única y exclusivamente a la arquitectura original, lógica de orquestación, motor de decisiones, modelos e integraciones desarrolladas por Dany.
+
+#### 6. Marcas y Nombres Comerciales
+Las denominaciones "Dimensión Espejo", "Mirror Dimension", así como sus logotipos y lemas asociados, son marcas de autoría propia. No se otorga autorización para su uso con fines publicitarios, de patrocinio o de marca comercial sin consentimiento previo por escrito.
+
+#### 7. Licenciamiento Comercial y Versiones Empresariales
+Las organizaciones o personas que deseen utilizar Dimensión Espejo para fines comerciales, despliegues en infraestructura de producción, características empresariales personalizadas o integración de productos deben solicitar un acuerdo de Licencia Comercial Empresarial.
+* **Contacto:** A través de los canales oficiales del repositorio.
+
+#### 8. Exclusión de Garantías y Limitación de Responsabilidad
+ESTE SOFTWARE SE ENTREGA "TAL CUAL" ("AS IS"), SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO SIN LIMITARSE A LAS GARANTÍAS DE COMERCIABILIDAD, ADECUACIÓN PARA UN PROPÓSITO PARTICULAR O NO INFRACCIÓN. EN NINGÚN CASO EL TITULAR DE LOS DERECHOS DE AUTOR SERÁ RESPONSABLE POR DAÑOS, PÉRDIDA DE DATOS O FALLAS DERIVADAS DEL USO O DE LA IMPOSIBILIDAD DE USO DE ESTE SOFTWARE.
+
+---
+
+**Copyright Holder:** Copyright © 2026 Dany. All rights reserved.

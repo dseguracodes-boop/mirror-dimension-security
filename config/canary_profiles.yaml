@@ -1,0 +1,27 @@
+# Dimensión Espejo - Deception Profiles and Decoy Generators
+profiles:
+  canary_files:
+    - name: "decoy_env_aws"
+      relative_path: ".env.backup"
+      content_template: |
+        # Development configuration
+        DATABASE_URL=postgres://canary_admin:canary_trap_password_99@localhost:5432/main_db
+        AWS_ACCESS_KEY_ID=CANARY_AWS_ACCESS_KEY_TRAP_01
+        AWS_SECRET_ACCESS_KEY=CANARY_AWS_SECRET_KEY_TRAP_REDACTED
+        JWT_SECRET=super_secret_dev_signing_key_4412
+      trap_type: "filesystem_canary"
+
+  canary_ports:
+    - name: "fake_redis"
+      port: 16379
+      service_emulation: "redis"
+      banner: "+PONG"
+
+    - name: "fake_ssh"
+      port: 2222
+      service_emulation: "ssh"
+      banner: "SSH-2.0-OpenSSH_9.0"
+
+    - name: "fake_postgres"
+      port: 15432
+      service_emulation: "postgres"

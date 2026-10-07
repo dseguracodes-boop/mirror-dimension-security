@@ -1,0 +1,58 @@
+# Dimensión Espejo - Protected Assets Inventory
+assets:
+  api:
+    type: container
+    criticality: high
+    description: "Main Backend API (FastAPI / Node)"
+    container:
+      name: developer-api
+      image: developer-api:latest
+      ports: [8000]
+    protections:
+      filesystem: true
+      network: true
+      process: true
+      canary: true
+      integrity: false
+
+  postgres:
+    type: database
+    criticality: critical
+    description: "Primary Relational Database"
+    container:
+      name: developer-postgres
+      image: postgres:16-alpine
+      ports: [5432]
+      volumes: ["pgdata:/var/lib/postgresql/data"]
+    protections:
+      filesystem: true
+      network: true
+      process: false
+      canary: false
+      integrity: true
+
+  redis:
+    type: service
+    criticality: medium
+    description: "In-memory Cache and Queue"
+    container:
+      name: developer-redis
+      image: redis:7-alpine
+      ports: [6379]
+    protections:
+      filesystem: false
+      network: true
+      process: false
+      canary: false
+      integrity: false
+
+  secrets:
+    type: secrets
+    criticality: critical
+    description: "Local development environment variables (.env, API keys)"
+    protections:
+      filesystem: true
+      network: false
+      process: false
+      canary: true
+      integrity: true

@@ -1,0 +1,60 @@
+# Dimensión Espejo - Declarative Security Policies
+policies:
+  - name: canary_credentials_compromise
+    description: "Access or exfiltration of decoy credentials (.env.fake / canary tokens)"
+    event_type: canary_trigger
+    attack_stage: credential_access
+    confidence_min: 0.90
+    decision:
+      threat: critical
+      action: emergency_freeze
+
+  - name: container_escape_attempt
+    description: "Suspicious syscalls or namespace breakout attempts"
+    event_type: container_escape
+    confidence_min: 0.85
+    decision:
+      threat: critical
+      action: emergency_freeze
+
+  - name: decoy_service_tampering
+    description: "Probing or brute force against honeypot/decoy ports"
+    event_type: fake_port_probe
+    confidence_min: 0.80
+    decision:
+      threat: high
+      action: isolate
+
+  - name: critical_asset_filesystem_tampering
+    description: "Unauthorized file modification on critical assets"
+    event_type: filesystem_tampering
+    asset_criticality: critical
+    confidence_min: 0.75
+    decision:
+      threat: high
+      action: quarantine
+
+  - name: suspicious_process_critical
+    description: "Unexpected executable launched inside critical asset"
+    event_type: process_anomaly
+    asset_criticality: critical
+    confidence_min: 0.70
+    decision:
+      threat: high
+      action: isolate
+
+  - name: suspicious_process_general
+    description: "Anomalous process on non-critical workload"
+    event_type: process_anomaly
+    confidence_min: 0.50
+    decision:
+      threat: medium
+      action: monitor
+
+  - name: normal_operation_fallback
+    description: "Routine informational events"
+    event_type: heartbeat
+    confidence_min: 0.0
+    decision:
+      threat: low
+      action: allow
